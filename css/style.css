@@ -1,31 +1,38 @@
 body {
-    text-align: center;
-}
-
-#number-display{
     display: flex;
-    justify-content: center;
-    color: black;
-    font-size:55px
-}
-
-.container {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    align-content: center;;
-}
-#number-input {
-    margin: auto 15px auto 15px;
     text-align: center;
-    font-size: 30px;
-
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 3em;
 }
-.buttons {
-    color: white;
-    font-size: xx-large;
-    background-color: rgb(158, 155, 155);
-    border-radius: 25%;
-    padding: 30px;
-    margin: 20px 0 0 0; 
+
+input {
+    border: 2px solid gray;
+    border-radius: 15px;
+    width: 95px;
+    height: 70px;
+    margin: 10px 30px 35px 30px;
+    text-align: center;
+    font-size: 1.2em;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    background-color: gray;
+    color: whitesmoke;
+    border: 2px solid gray;
+    border-radius: 15px;
+    height: 60px;
+    width: 60px;
+    font-size: 1em;
+}
+
+button:hover {
+    background: whitesmoke;
+    color: gray;
 }
