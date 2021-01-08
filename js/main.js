@@ -13,6 +13,9 @@ function add(e) {
     numberDisplay.innerText = num;
     if (num >= 0) {
         numberDisplay.style.color = "black";
+    } 
+    if (num < 0) {
+        numberDisplay.style.color = "red";
     }
 }
 //make function that takes input and subtracts it from numberDisplay with minus then changes innertext 
@@ -22,7 +25,9 @@ function subtract(e) {
     numberDisplay.innerText = num;
     if (num < 0) {
         numberDisplay.style.color = "red";
-    }
+    } 
+    if (num >= 0)
+    numberDisplay.style.color = "black";
 };
 //make an event listener for the plus click - call add function in it
 
